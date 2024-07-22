@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="hi">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +12,7 @@
             padding: 20px;
             background-color: #f4f4f4;
         }
+
         .container {
             max-width: 800px;
             margin: 0 auto;
@@ -19,27 +21,35 @@
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        h1, h2 {
+
+        h1,
+        h2 {
             text-align: center;
         }
+
         .question {
             margin-bottom: 15px;
         }
+
         .question p {
             margin: 0;
             font-weight: bold;
         }
+
         .options {
             margin-top: 5px;
         }
+
         .options label {
             display: block;
             margin-bottom: 5px;
         }
+
         .result {
             margin-top: 10px;
             font-weight: bold;
         }
+
         button {
             padding: 10px 20px;
             border: none;
@@ -48,11 +58,13 @@
             color: #fff;
             cursor: pointer;
         }
+
         button:hover {
             background-color: #0056b3;
         }
     </style>
 </head>
+
 <body>
 
     <div class="container">
@@ -177,7 +189,7 @@
             <button onclick="checkAnswer('q10', 'c')">उत्तर जांचें</button>
             <div id="q10-result" class="result"></div>
         </div>
-        
+
         <div class="question">
             <p>प्रश्न 11: अमेरिकी स्वतंत्रता संग्राम के दौरान 13 उपनिवेशों ने किस वर्ष स्वतंत्रता की घोषणा की?</p>
             <div class="options">
@@ -417,22 +429,265 @@
             <button onclick="checkAnswer('q30', 'b')">उत्तर जांचें</button>
             <div id="q30-result" class="result"></div>
         </div>
-        
-        
 
+        <div class="question">
+            <p>प्रश्न 31: स्वतंत्रता की घोषणा का मुख्य सिद्धांत क्या था?</p>
+            <div class="options">
+                <label><input type="radio" name="q31" value="a"> धार्मिक स्वतंत्रता</label>
+                <label><input type="radio" name="q31" value="b"> जीवन, स्वतंत्रता और सुख की खोज</label>
+                <label><input type="radio" name="q31" value="c"> राजनीतिक स्वतंत्रता</label>
+                <label><input type="radio" name="q31" value="d"> आर्थिक स्वतंत्रता</label>
+            </div>
+            <button onclick="checkAnswer('q31', 'b')">उत्तर जांचें</button>
+            <div id="q31-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 32: स्वतंत्रता संग्राम के दौरान बोस्टन टी पार्टी का क्या कारण था?</p>
+            <div class="options">
+                <label><input type="radio" name="q32" value="a"> धार्मिक असंतोष</label>
+                <label><input type="radio" name="q32" value="b"> चाय पर कर</label>
+                <label><input type="radio" name="q32" value="c"> श्रम विवाद</label>
+                <label><input type="radio" name="q32" value="d"> भूमि विवाद</label>
+            </div>
+            <button onclick="checkAnswer('q32', 'b')">उत्तर जांचें</button>
+            <div id="q32-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 33: अमेरिकी स्वतंत्रता संग्राम में कौन सा युद्ध निर्णायक था?</p>
+            <div class="options">
+                <label><input type="radio" name="q33" value="a"> साराटोगा की लड़ाई</label>
+                <label><input type="radio" name="q33" value="b"> यॉर्कटाउन की लड़ाई</label>
+                <label><input type="radio" name="q33" value="c"> लेक्सिंगटन की लड़ाई</label>
+                <label><input type="radio" name="q33" value="d"> बंकर हिल की लड़ाई</label>
+            </div>
+            <button onclick="checkAnswer('q33', 'b')">उत्तर जांचें</button>
+            <div id="q33-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 34: अमेरिकी स्वतंत्रता संग्राम के समय "फ्रेंच एलायंस" क्या था?</p>
+            <div class="options">
+                <label><input type="radio" name="q34" value="a"> फ्रांस का ब्रिटेन के खिलाफ युद्ध में शामिल होना</label>
+                <label><input type="radio" name="q34" value="b"> फ्रांस का स्पेन के खिलाफ युद्ध में शामिल होना</label>
+                <label><input type="radio" name="q34" value="c"> फ्रांस का रूस के खिलाफ युद्ध में शामिल होना</label>
+                <label><input type="radio" name="q34" value="d"> फ्रांस का जर्मनी के खिलाफ युद्ध में शामिल होना</label>
+            </div>
+            <button onclick="checkAnswer('q34', 'a')">उत्तर जांचें</button>
+            <div id="q34-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 35: अमेरिकी स्वतंत्रता संग्राम का समापन कब हुआ?</p>
+            <div class="options">
+                <label><input type="radio" name="q35" value="a"> 1781</label>
+                <label><input type="radio" name="q35" value="b"> 1783</label>
+                <label><input type="radio" name="q35" value="c"> 1785</label>
+                <label><input type="radio" name="q35" value="d"> 1787</label>
+            </div>
+            <button onclick="checkAnswer('q35', 'b')">उत्तर जांचें</button>
+            <div id="q35-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 36: अमेरिकी स्वतंत्रता संग्राम के प्रमुख जनरल कौन थे?</p>
+            <div class="options">
+                <label><input type="radio" name="q36" value="a"> बेंजामिन फ्रैंकलिन</label>
+                <label><input type="radio" name="q36" value="b"> थॉमस जेफरसन</label>
+                <label><input type="radio" name="q36" value="c"> जॉर्ज वॉशिंगटन</label>
+                <label><input type="radio" name="q36" value="d"> जॉन एडम्स</label>
+            </div>
+            <button onclick="checkAnswer('q36', 'c')">उत्तर जांचें</button>
+            <div id="q36-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 37: अमेरिकी स्वतंत्रता संग्राम के समय किस दस्तावेज़ ने "गृह युद्ध के अधिकारों" की बात की?</p>
+            <div class="options">
+                <label><input type="radio" name="q37" value="a"> संविधान</label>
+                <label><input type="radio" name="q37" value="b"> अधिकारों का विधेयक</label>
+                <label><input type="radio" name="q37" value="c"> स्वतंत्रता की घोषणा</label>
+                <label><input type="radio" name="q37" value="d"> संघ के अनुच्छेद</label>
+            </div>
+            <button onclick="checkAnswer('q37', 'b')">उत्तर जांचें</button>
+            <div id="q37-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 38: अमेरिकी स्वतंत्रता संग्राम के बाद किस वर्ष अमेरिकी संविधान की पुष्टि की गई?</p>
+            <div class="options">
+                <label><input type="radio" name="q38" value="a"> 1783</label>
+                <label><input type="radio" name="q38" value="b"> 1787</label>
+                <label><input type="radio" name="q38" value="c"> 1789</label>
+                <label><input type="radio" name="q38" value="d"> 1791</label>
+            </div>
+            <button onclick="checkAnswer('q38', 'b')">उत्तर जांचें</button>
+            <div id="q38-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 39: अमेरिकी स्वतंत्रता संग्राम के दौरान किस देश ने अमेरिकी उपनिवेशों को महत्वपूर्ण सहायता प्रदान
+                की?</p>
+            <div class="options">
+                <label><input type="radio" name="q39" value="a"> स्पेन</label>
+                <label><input type="radio" name="q39" value="b"> फ्रांस</label>
+                <label><input type="radio" name="q39" value="c"> नीदरलैंड</label>
+                <label><input type="radio" name="q39" value="d"> रूस</label>
+            </div>
+            <button onclick="checkAnswer('q39', 'b')">उत्तर जांचें</button>
+            <div id="q39-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 40: अमेरिकी स्वतंत्रता संग्राम का प्रमुख सामाजिक परिणाम क्या था?</p>
+            <div class="options">
+                <label><input type="radio" name="q40" value="a"> गुलामी का उन्मूलन</label>
+                <label><input type="radio" name="q40" value="b"> महिलाओं को वोट देने का अधिकार</label>
+                <label><input type="radio" name="q40" value="c"> वर्ग विभाजन का अंत</label>
+                <label><input type="radio" name="q40" value="d"> लोकतंत्र की स्थापना</label>
+            </div>
+            <button onclick="checkAnswer('q40', 'd')">उत्तर जांचें</button>
+            <div id="q40-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 41: अमेरिकी स्वतंत्रता संग्राम के समय कौन सी लड़ाई "शॉट हर्ड राउंड द वर्ल्ड" के नाम से जानी जाती
+                है?</p>
+            <div class="options">
+                <label><input type="radio" name="q41" value="a"> बंकर हिल की लड़ाई</label>
+                <label><input type="radio" name="q41" value="b"> लेक्सिंगटन और कॉनकॉर्ड की लड़ाई</label>
+                <label><input type="radio" name="q41" value="c"> साराटोगा की लड़ाई</label>
+                <label><input type="radio" name="q41" value="d"> यॉर्कटाउन की लड़ाई</label>
+            </div>
+            <button onclick="checkAnswer('q41', 'b')">उत्तर जांचें</button>
+            <div id="q41-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 42: अमेरिकी स्वतंत्रता संग्राम के दौरान किन्होंने "नाइट राइड" किया था?</p>
+            <div class="options">
+                <label><input type="radio" name="q42" value="a"> थॉमस पेन</label>
+                <label><input type="radio" name="q42" value="b"> सैमुअल एडम्स</label>
+                <label><input type="radio" name="q42" value="c"> पॉल रिवियर</label>
+                <label><input type="radio" name="q42" value="d"> बेंजामिन फ्रैंकलिन</label>
+            </div>
+            <button onclick="checkAnswer('q42', 'c')">उत्तर जांचें</button>
+            <div id="q42-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 43: अमेरिकी स्वतंत्रता संग्राम के दौरान किसने ब्रिटिश सेना के खिलाफ गोरिल्ला युद्ध का नेतृत्व
+                किया?</p>
+            <div class="options">
+                <label><input type="radio" name="q43" value="a"> जॉर्ज वॉशिंगटन</label>
+                <label><input type="radio" name="q43" value="b"> फ्रांसिस मैरियन</label>
+                <label><input type="radio" name="q43" value="c"> नाथनियल ग्रीन</label>
+                <label><input type="radio" name="q43" value="d"> बेनेडिक्ट अर्नोल्ड</label>
+            </div>
+            <button onclick="checkAnswer('q43', 'b')">उत्तर जांचें</button>
+            <div id="q43-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 44: अमेरिकी स्वतंत्रता संग्राम के समय ब्रिटिश सेना का प्रमुख कौन था?</p>
+            <div class="options">
+                <label><input type="radio" name="q44" value="a"> जनरल कॉर्नवालिस</label>
+                <label><input type="radio" name="q44" value="b"> जनरल बर्गोइन</label>
+                <label><input type="radio" name="q44" value="c"> जनरल क्लिंटन</label>
+                <label><input type="radio" name="q44" value="d"> जनरल हाउ</label>
+            </div>
+            <button onclick="checkAnswer('q44', 'a')">उत्तर जांचें</button>
+            <div id="q44-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 45: अमेरिकी स्वतंत्रता संग्राम के समय अमेरिका का सबसे बड़ा समुद्री बंदरगाह कौन सा था?</p>
+            <div class="options">
+                <label><input type="radio" name="q45" value="a"> बोस्टन</label>
+                <label><input type="radio" name="q45" value="b"> चार्ल्सटन</label>
+                <label><input type="radio" name="q45" value="c"> न्यूयॉर्क</label>
+                <label><input type="radio" name="q45" value="d"> फिलाडेल्फिया</label>
+            </div>
+            <button onclick="checkAnswer('q45', 'd')">उत्तर जांचें</button>
+            <div id="q45-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 46: अमेरिकी स्वतंत्रता संग्राम के समय किस दस्तावेज़ ने औपनिवेशिक लोगों के "अजन्मे अधिकारों" की बात
+                की?</p>
+            <div class="options">
+                <label><input type="radio" name="q46" value="a"> अधिकारों का विधेयक</label>
+                <label><input type="radio" name="q46" value="b"> स्वतंत्रता की घोषणा</label>
+                <label><input type="radio" name="q46" value="c"> संविधान</label>
+                <label><input type="radio" name="q46" value="d"> संघ के अनुच्छेद</label>
+            </div>
+            <button onclick="checkAnswer('q46', 'b')">उत्तर जांचें</button>
+            <div id="q46-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 47: अमेरिकी स्वतंत्रता संग्राम के दौरान कौन सा ब्रिटिश अधिनियम "असहनीय कृत्यों" के रूप में जाना
+                गया?</p>
+            <div class="options">
+                <label><input type="radio" name="q47" value="a"> स्टांप अधिनियम</label>
+                <label><input type="radio" name="q47" value="b"> चाय अधिनियम</label>
+                <label><input type="radio" name="q47" value="c"> शुगर अधिनियम</label>
+                <label><input type="radio" name="q47" value="d"> सहायक अधिनियम</label>
+            </div>
+            <button onclick="checkAnswer('q47', 'd')">उत्तर जांचें</button>
+            <div id="q47-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 48: अमेरिकी स्वतंत्रता संग्राम के दौरान किन्होंने "स्वतंत्रता के विचार" को सबसे अधिक प्रभावित
+                किया?</p>
+            <div class="options">
+                <label><input type="radio" name="q48" value="a"> थॉमस पेन</label>
+                <label><input type="radio" name="q48" value="b"> जॉन लॉक</label>
+                <label><input type="radio" name="q48" value="c"> थॉमस जेफरसन</label>
+                <label><input type="radio" name="q48" value="d"> जॉर्ज वॉशिंगटन</label>
+            </div>
+            <button onclick="checkAnswer('q48', 'b')">उत्तर जांचें</button>
+            <div id="q48-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 49: अमेरिकी स्वतंत्रता संग्राम के समय "कॉमन सेंस" किसने लिखा?</p>
+            <div class="options">
+                <label><input type="radio" name="q49" value="a"> बेंजामिन फ्रैंकलिन</label>
+                <label><input type="radio" name="q49" value="b"> थॉमस पेन</label>
+                <label><input type="radio" name="q49" value="c"> जॉन एडम्स</label>
+                <label><input type="radio" name="q49" value="d"> सैमुअल एडम्स</label>
+            </div>
+            <button onclick="checkAnswer('q49', 'b')">उत्तर जांचें</button>
+            <div id="q49-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 50: अमेरिकी स्वतंत्रता संग्राम के दौरान किन्होंने "स्वतंत्रता या मृत्यु" का नारा दिया था?</p>
+            <div class="options">
+                <label><input type="radio" name="q50" value="a"> पैट्रिक हेनरी</label>
+                <label><input type="radio" name="q50" value="b"> पॉल रिवियर</label>
+                <label><input type="radio" name="q50" value="c"> थॉमस जेफरसन</label>
+                <label><input type="radio" name="q50" value="d"> जॉन हेनकॉक</label>
+            </div>
+            <button onclick="checkAnswer('q50', 'a')">उत्तर जांचें</button>
+            <div id="q50-result" class="result"></div>
+        </div>
     </div>
 
     <script>
         function checkAnswer(question, correctAnswer) {
-            var selectedOption = document.querySelector('input[name="' + question + '"]:checked');
-            var resultDiv = document.getElementById(question + '-result');
-            
+            const selectedOption = document.querySelector(`input[name="${question}"]:checked`);
+            const resultDiv = document.getElementById(`${question}-result`);
             if (selectedOption) {
-                if (selectedOption.value === correctAnswer) {
+                const answer = selectedOption.value;
+                if (answer === correctAnswer) {
                     resultDiv.textContent = 'सही उत्तर!';
                     resultDiv.style.color = 'green';
                 } else {
-                    resultDiv.textContent = 'गलत उत्तर!';
+                    resultDiv.textContent = 'गलत उत्तर। सही उत्तर है: ' + correctAnswer.toUpperCase();
                     resultDiv.style.color = 'red';
                 }
             } else {
@@ -441,6 +696,6 @@
             }
         }
     </script>
-
 </body>
+
 </html>
