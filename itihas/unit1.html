@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>इकाई 1 - भौगोलिक खोज क्विज</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        .question {
+            margin-bottom: 15px;
+        }
+        .question p {
+            margin: 0;
+            font-weight: bold;
+        }
+        .options {
+            margin-top: 5px;
+        }
+        .options label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .result {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            background-color: #007BFF;
+            color: #fff;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>इकाई 1 - भौगोलिक खोज</h1>
+
+        <div class="question">
+            <p>प्रश्न 1: अंधकारमय युग किस युग को कहा जाता है?</p>
+            <div class="options">
+                <label><input type="radio" name="q1" value="a"> प्राचीन युग</label>
+                <label><input type="radio" name="q1" value="b"> मध्य युग</label>
+                <label><input type="radio" name="q1" value="c"> आधुनिक युग</label>
+                <label><input type="radio" name="q1" value="d"> उत्तर आधुनिक युग</label>
+            </div>
+            <button onclick="checkAnswer('q1', 'b')">उत्तर जांचें</button>
+            <div id="q1-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 2: आधुनिक युग का प्रारंभिक काल कब माना जाता है?</p>
+            <div class="options">
+                <label><input type="radio" name="q2" value="a"> 10वीं शताब्दी</label>
+                <label><input type="radio" name="q2" value="b"> 12वीं शताब्दी</label>
+                <label><input type="radio" name="q2" value="c"> 15वीं शताब्दी</label>
+                <label><input type="radio" name="q2" value="d"> 18वीं शताब्दी</label>
+            </div>
+            <button onclick="checkAnswer('q2', 'c')">उत्तर जांचें</button>
+            <div id="q2-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 3: आधुनिक खोजों का मुख्य उद्देश्य क्या था?</p>
+            <div class="options">
+                <label><input type="radio" name="q3" value="a"> नए व्यापारिक मार्गों की खोज</label>
+                <label><input type="radio" name="q3" value="b"> नए धर्मों की स्थापना</label>
+                <label><input type="radio" name="q3" value="c"> नए कलाओं की खोज</label>
+                <label><input type="radio" name="q3" value="d"> नए विज्ञान के आविष्कार</label>
+            </div>
+            <button onclick="checkAnswer('q3', 'a')">उत्तर जांचें</button>
+            <div id="q3-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 4: किसने प्रथम उपनिवेशिक खोज की शुरुआत की थी?</p>
+            <div class="options">
+                <label><input type="radio" name="q4" value="a"> वास्को डी गामा</label>
+                <label><input type="radio" name="q4" value="b"> कोलंबस</label>
+                <label><input type="radio" name="q4" value="c"> मारको पोलो</label>
+                <label><input type="radio" name="q4" value="d"> फर्डिनेंड मैगेलन</label>
+            </div>
+            <button onclick="checkAnswer('q4', 'b')">उत्तर जांचें</button>
+            <div id="q4-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 5: भौगोलिक खोजों का सबसे महत्वपूर्ण परिणाम क्या था?</p>
+            <div class="options">
+                <label><input type="radio" name="q5" value="a"> नए व्यापारिक मार्गों की खोज</label>
+                <label><input type="radio" name="q5" value="b"> नई संस्कृतियों का संपर्क</label>
+                <label><input type="radio" name="q5" value="c"> नए विज्ञान की खोज</label>
+                <label><input type="radio" name="q5" value="d"> उपरोक्त सभी</label>
+            </div>
+            <button onclick="checkAnswer('q5', 'd')">उत्तर जांचें</button>
+            <div id="q5-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 6: आधुनिक खोजों में मुख्य प्रयास किसने किया था?</p>
+            <div class="options">
+                <label><input type="radio" name="q6" value="a"> फ्रांस</label>
+                <label><input type="radio" name="q6" value="b"> पुर्तगाल</label>
+                <label><input type="radio" name="q6" value="c"> इंग्लैंड</label>
+                <label><input type="radio" name="q6" value="d"> जर्मनी</label>
+            </div>
+            <button onclick="checkAnswer('q6', 'b')">उत्तर जांचें</button>
+            <div id="q6-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 7: आधुनिक युग के प्रारंभ में किसके द्वारा समुद्री मार्ग की खोज की गई?</p>
+            <div class="options">
+                <label><input type="radio" name="q7" value="a"> वास्को डी गामा</label>
+                <label><input type="radio" name="q7" value="b"> बार्थोलोम्यू डियास</label>
+                <label><input type="radio" name="q7" value="c"> क्रिस्टोफर कोलंबस</label>
+                <label><input type="radio" name="q7" value="d"> हेनरी द नेविगेटर</label>
+            </div>
+            <button onclick="checkAnswer('q7', 'a')">उत्तर जांचें</button>
+            <div id="q7-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 8: अंधकारमय युग का समय किसके द्वारा वर्णित किया गया है?</p>
+            <div class="options">
+                <label><input type="radio" name="q8" value="a"> इतिहासकार</label>
+                <label><input type="radio" name="q8" value="b"> वैज्ञानिक</label>
+                <label><input type="radio" name="q8" value="c"> दार्शनिक</label>
+                <label><input type="radio" name="q8" value="d"> लेखक</label>
+            </div>
+            <button onclick="checkAnswer('q8', 'a')">उत्तर जांचें</button>
+            <div id="q8-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 9: औपनिवेशिक खोज और विस्तार का मुख्य कारण क्या था?</p>
+            <div class="options">
+                <label><input type="radio" name="q9" value="a"> धन की प्राप्ति</label>
+                <label><input type="radio" name="q9" value="b"> धर्म का प्रचार</label>
+                <label><input type="radio" name="q9" value="c"> शक्ति की प्राप्ति</label>
+                <label><input type="radio" name="q9" value="d"> उपरोक्त सभी</label>
+            </div>
+            <button onclick="checkAnswer('q9', 'd')">उत्तर जांचें</button>
+            <div id="q9-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 10: भौगोलिक खोजों का परिणाम किस प्रकार की सोच का विकास था?</p>
+            <div class="options">
+                <label><input type="radio" name="q10" value="a"> वैश्विक</label>
+                <label><input type="radio" name="q10" value="b"> राष्ट्रीय</label>
+                <label><input type="radio" name="q10" value="c"> क्षेत्रीय</label>
+                <label><input type="radio" name="q10" value="d"> स्थानीय</label>
+            </div>
+            <button onclick="checkAnswer('q10', 'a')">उत्तर जांचें</button>
+            <div id="q10-result" class="result"></div>
+        </div>
+        
+        <div class="question">
+            <p>प्रश्न 11: कोलंबस ने पहली बार अमेरिका की खोज किस वर्ष की थी?</p>
+            <div class="options">
+                <label><input type="radio" name="q11" value="a"> 1492</label>
+                <label><input type="radio" name="q11" value="b"> 1500</label>
+                <label><input type="radio" name="q11" value="c"> 1453</label>
+                <label><input type="radio" name="q11" value="d"> 1485</label>
+            </div>
+            <button onclick="checkAnswer('q11', 'a')">उत्तर जांचें</button>
+            <div id="q11-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 12: आधुनिक खोजों का प्रमुख केंद्र कौन सा देश था?</p>
+            <div class="options">
+                <label><input type="radio" name="q12" value="a"> स्पेन</label>
+                <label><input type="radio" name="q12" value="b"> पुर्तगाल</label>
+                <label><input type="radio" name="q12" value="c"> इंग्लैंड</label>
+                <label><input type="radio" name="q12" value="d"> फ्रांस</label>
+            </div>
+            <button onclick="checkAnswer('q12', 'b')">उत्तर जांचें</button>
+            <div id="q12-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 13: अंधकारमय युग का अंत किस घटना से माना जाता है?</p>
+            <div class="options">
+                <label><input type="radio" name="q13" value="a"> वास्को डी गामा की भारत यात्रा</label>
+                <label><input type="radio" name="q13" value="b"> कोलंबस की अमेरिका यात्रा</label>
+                <label><input type="radio" name="q13" value="c"> पुनर्जागरण</label>
+                <label><input type="radio" name="q13" value="d"> फ्रांसीसी क्रांति</label>
+            </div>
+            <button onclick="checkAnswer('q13', 'c')">उत्तर जांचें</button>
+            <div id="q13-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 14: कौन सी खोज सबसे पहले एशिया में व्यापारिक मार्ग स्थापित करने के उद्देश्य से की गई थी?</p>
+            <div class="options">
+                <label><input type="radio" name="q14" value="a"> वास्को डी गामा की यात्रा</label>
+                <label><input type="radio" name="q14" value="b"> कोलंबस की यात्रा</label>
+                <label><input type="radio" name="q14" value="c"> मैगेलन की यात्रा</label>
+                <label><input type="radio" name="q14" value="d"> हेनरी द नेविगेटर की यात्रा</label>
+            </div>
+            <button onclick="checkAnswer('q14', 'a')">उत्तर जांचें</button>
+            <div id="q14-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 15: आधुनिक युग की शुरुआत का प्रमुख कारण क्या था?</p>
+            <div class="options">
+                <label><input type="radio" name="q15" value="a"> धार्मिक परिवर्तन</label>
+                <label><input type="radio" name="q15" value="b"> वैज्ञानिक आविष्कार</label>
+                <label><input type="radio" name="q15" value="c"> भौगोलिक खोजें</label>
+                <label><input type="radio" name="q15" value="d"> औद्योगिक क्रांति</label>
+            </div>
+            <button onclick="checkAnswer('q15', 'c')">उत्तर जांचें</button>
+            <div id="q15-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 16: वास्को डी गामा ने भारत की खोज किस सागर मार्ग से की थी?</p>
+            <div class="options">
+                <label><input type="radio" name="q16" value="a"> अटलांटिक महासागर</label>
+                <label><input type="radio" name="q16" value="b"> हिंद महासागर</label>
+                <label><input type="radio" name="q16" value="c"> प्रशांत महासागर</label>
+                <label><input type="radio" name="q16" value="d"> आर्कटिक महासागर</label>
+            </div>
+            <button onclick="checkAnswer('q16', 'b')">उत्तर जांचें</button>
+            <div id="q16-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 17: किसने अफ्रीका के दक्षिणी छोर का नाम 'केप ऑफ गुड होप' रखा था?</p>
+            <div class="options">
+                <label><input type="radio" name="q17" value="a"> बार्थोलोम्यू डियास</label>
+                <label><input type="radio" name="q17" value="b"> वास्को डी गामा</label>
+                <label><input type="radio" name="q17" value="c"> कोलंबस</label>
+                <label><input type="radio" name="q17" value="d"> फर्डिनेंड मैगेलन</label>
+            </div>
+            <button onclick="checkAnswer('q17', 'a')">उत्तर जांचें</button>
+            <div id="q17-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 18: औपनिवेशिक विस्तार का मुख्य उद्देश्य क्या था?</p>
+            <div class="options">
+                <label><input type="radio" name="q18" value="a"> सांस्कृतिक आदान-प्रदान</label>
+                <label><input type="radio" name="q18" value="b"> आर्थिक शोषण</label>
+                <label><input type="radio" name="q18" value="c"> राजनीतिक अधीनता</label>
+                <label><input type="radio" name="q18" value="d"> धार्मिक प्रचार</label>
+            </div>
+            <button onclick="checkAnswer('q18', 'b')">उत्तर जांचें</button>
+            <div id="q18-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 19: भौगोलिक खोजों के परिणामस्वरूप किस नए महाद्वीप की खोज हुई?</p>
+            <div class="options">
+                <label><input type="radio" name="q19" value="a"> अफ्रीका</label>
+                <label><input type="radio" name="q19" value="b"> एशिया</label>
+                <label><input type="radio" name="q19" value="c"> अमेरिका</label>
+                <label><input type="radio" name="q19" value="d"> ऑस्ट्रेलिया</label>
+            </div>
+            <button onclick="checkAnswer('q19', 'c')">उत्तर जांचें</button>
+            <div id="q19-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 20: फर्डिनेंड मैगेलन का सबसे बड़ा योगदान क्या था?</p>
+            <div class="options">
+                <label><input type="radio" name="q20" value="a"> अमेरिका की खोज</label>
+                <label><input type="radio" name="q20" value="b"> पृथ्वी का पहला समुद्री चक्कर</label>
+                <label><input type="radio" name="q20" value="c"> भारत का सागर मार्ग</label>
+                <label><input type="radio" name="q20" value="d"> अफ्रीका की खोज</label>
+            </div>
+            <button onclick="checkAnswer('q20', 'b')">उत्तर जांचें</button>
+            <div id="q20-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 21: किसने प्रशांत महासागर पार करने का प्रयास किया था?</p>
+            <div class="options">
+                <label><input type="radio" name="q21" value="a"> वास्को डी गामा</label>
+                <label><input type="radio" name="q21" value="b"> कोलंबस</label>
+                <label><input type="radio" name="q21" value="c"> मैगेलन</label>
+                <label><input type="radio" name="q21" value="d"> बार्थोलोम्यू डियास</label>
+            </div>
+            <button onclick="checkAnswer('q21', 'c')">उत्तर जांचें</button>
+            <div id="q21-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 22: कोलंबस किस देश के लिए समुद्री यात्रा पर निकला था?</p>
+            <div class="options">
+                <label><input type="radio" name="q22" value="a"> पुर्तगाल</label>
+                <label><input type="radio" name="q22" value="b"> स्पेन</label>
+                <label><input type="radio" name="q22" value="c"> फ्रांस</label>
+                <label><input type="radio" name="q22" value="d"> इंग्लैंड</label>
+            </div>
+            <button onclick="checkAnswer('q22', 'b')">उत्तर जांचें</button>
+            <div id="q22-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 23: कौन सा युग पुनर्जागरण का प्रारंभिक काल माना जाता है?</p>
+            <div class="options">
+                <label><input type="radio" name="q23" value="a"> प्राचीन युग</label>
+                <label><input type="radio" name="q23" value="b"> मध्य युग</label>
+                <label><input type="radio" name="q23" value="c"> आधुनिक युग</label>
+                <label><input type="radio" name="q23" value="d"> उत्तर आधुनिक युग</label>
+            </div>
+            <button onclick="checkAnswer('q23', 'c')">उत्तर जांचें</button>
+            <div id="q23-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 24: आधुनिक खोजों से पूर्व कौन से प्रमुख प्रयास किए गए थे?</p>
+            <div class="options">
+                <label><input type="radio" name="q24" value="a"> धर्म प्रचार</label>
+                <label><input type="radio" name="q24" value="b"> विज्ञान के आविष्कार</label>
+                <label><input type="radio" name="q24" value="c"> व्यापारिक मार्गों की खोज</label>
+                <label><input type="radio" name="q24" value="d"> कला का विकास</label>
+            </div>
+            <button onclick="checkAnswer('q24', 'c')">उत्तर जांचें</button>
+            <div id="q24-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 25: किस खोजकर्ता ने दक्षिणी अमेरिका के पश्चिमी तट की खोज की थी?</p>
+            <div class="options">
+                <label><input type="radio" name="q25" value="a"> वास्को डी गामा</label>
+                <label><input type="radio" name="q25" value="b"> मैगेलन</label>
+                <label><input type="radio" name="q25" value="c"> बार्थोलोम्यू डियास</label>
+                <label><input type="radio" name="q25" value="d"> कोलंबस</label>
+            </div>
+            <button onclick="checkAnswer('q25', 'b')">उत्तर जांचें</button>
+            <div id="q25-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 26: आधुनिक युग का प्रारंभिक काल किस घटना से शुरू होता है?</p>
+            <div class="options">
+                <label><input type="radio" name="q26" value="a"> अमेरिका की खोज</label>
+                <label><input type="radio" name="q26" value="b"> भारत की खोज</label>
+                <label><input type="radio" name="q26" value="c"> अफ्रीका की खोज</label>
+                <label><input type="radio" name="q26" value="d"> प्रशांत महासागर की खोज</label>
+            </div>
+            <button onclick="checkAnswer('q26', 'a')">उत्तर जांचें</button>
+            <div id="q26-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 27: औपनिवेशिक खोज और विस्तार के समय सबसे प्रमुख यूरोपीय शक्ति कौन सी थी?</p>
+            <div class="options">
+                <label><input type="radio" name="q27" value="a"> फ्रांस</label>
+                <label><input type="radio" name="q27" value="b"> स्पेन</label>
+                <label><input type="radio" name="q27" value="c"> इंग्लैंड</label>
+                <label><input type="radio" name="q27" value="d"> पुर्तगाल</label>
+            </div>
+            <button onclick="checkAnswer('q27', 'd')">उत्तर जांचें</button>
+            <div id="q27-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 28: कोलंबस ने अपनी यात्रा का प्रारंभ कहां से किया था?</p>
+            <div class="options">
+                <label><input type="radio" name="q28" value="a"> लिस्बन</label>
+                <label><input type="radio" name="q28" value="b"> बार्सिलोना</label>
+                <label><input type="radio" name="q28" value="c"> सेविल</label>
+                <label><input type="radio" name="q28" value="d"> पलेओस</label>
+            </div>
+            <button onclick="checkAnswer('q28', 'd')">उत्तर जांचें</button>
+            <div id="q28-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 29: भौगोलिक खोजों के परिणामस्वरूप किस व्यापार का विस्तार हुआ?</p>
+            <div class="options">
+                <label><input type="radio" name="q29" value="a"> रेशम व्यापार</label>
+                <label><input type="radio" name="q29" value="b"> मसालों का व्यापार</label>
+                <label><input type="radio" name="q29" value="c"> कांच का व्यापार</label>
+                <label><input type="radio" name="q29" value="d"> धातु का व्यापार</label>
+            </div>
+            <button onclick="checkAnswer('q29', 'b')">उत्तर जांचें</button>
+            <div id="q29-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 30: वास्को डी गामा किस बंदरगाह पर उतरा था?</p>
+            <div class="options">
+                <label><input type="radio" name="q30" value="a"> मुंबई</label>
+                <label><input type="radio" name="q30" value="b"> कालीकट</label>
+                <label><input type="radio" name="q30" value="c"> मद्रास</label>
+                <label><input type="radio" name="q30" value="d"> गोवा</label>
+            </div>
+            <button onclick="checkAnswer('q30', 'b')">उत्तर जांचें</button>
+            <div id="q30-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 31: बार्थोलोम्यू डियास ने किस महाद्वीप के दक्षिणी सिरे की खोज की थी?</p>
+            <div class="options">
+                <label><input type="radio" name="q31" value="a"> एशिया</label>
+                <label><input type="radio" name="q31" value="b"> अफ्रीका</label>
+                <label><input type="radio" name="q31" value="c"> दक्षिण अमेरिका</label>
+                <label><input type="radio" name="q31" value="d"> उत्तरी अमेरिका</label>
+            </div>
+            <button onclick="checkAnswer('q31', 'b')">उत्तर जांचें</button>
+            <div id="q31-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 32: मैगेलन के अभियान का प्रमुख उद्देश्य क्या था?</p>
+            <div class="options">
+                <label><input type="radio" name="q32" value="a"> भारत पहुँचने का नया मार्ग खोजना</label>
+                <label><input type="radio" name="q32" value="b"> पृथ्वी की परिक्रमा करना</label>
+                <label><input type="radio" name="q32" value="c"> अमेरिका की खोज</label>
+                <label><input type="radio" name="q32" value="d"> अफ्रीका की खोज</label>
+            </div>
+            <button onclick="checkAnswer('q32', 'b')">उत्तर जांचें</button>
+            <div id="q32-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 33: कोलंबस ने किस राजा और रानी की सहायता से अपनी यात्रा की थी?</p>
+            <div class="options">
+                <label><input type="radio" name="q33" value="a"> पुर्तगाल के राजा और रानी</label>
+                <label><input type="radio" name="q33" value="b"> स्पेन के राजा और रानी</label>
+                <label><input type="radio" name="q33" value="c"> इंग्लैंड के राजा और रानी</label>
+                <label><input type="radio" name="q33" value="d"> फ्रांस के राजा और रानी</label>
+            </div>
+            <button onclick="checkAnswer('q33', 'b')">उत्तर जांचें</button>
+            <div id="q33-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 34: आधुनिक खोजों के समय किस देश का नौसेना सबसे अधिक शक्तिशाली थी?</p>
+            <div class="options">
+                <label><input type="radio" name="q34" value="a"> फ्रांस</label>
+                <label><input type="radio" name="q34" value="b"> स्पेन</label>
+                <label><input type="radio" name="q34" value="c"> पुर्तगाल</label>
+                <label><input type="radio" name="q34" value="d"> इंग्लैंड</label>
+            </div>
+            <button onclick="checkAnswer('q34', 'c')">उत्तर जांचें</button>
+            <div id="q34-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 35: किस खोजकर्ता ने पहली बार प्रशांत महासागर का नाम रखा था?</p>
+            <div class="options">
+                <label><input type="radio" name="q35" value="a"> वास्को डी गामा</label>
+                <label><input type="radio" name="q35" value="b"> कोलंबस</label>
+                <label><input type="radio" name="q35" value="c"> मैगेलन</label>
+                <label><input type="radio" name="q35" value="d"> बार्थोलोम्यू डियास</label>
+            </div>
+            <button onclick="checkAnswer('q35', 'c')">उत्तर जांचें</button>
+            <div id="q35-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 36: किस देश के खोजकर्ताओं ने दक्षिण अमेरिका के अधिकतर हिस्से की खोज की?</p>
+            <div class="options">
+                <label><input type="radio" name="q36" value="a"> फ्रांस</label>
+                <label><input type="radio" name="q36" value="b"> स्पेन</label>
+                <label><input type="radio" name="q36" value="c"> पुर्तगाल</label>
+                <label><input type="radio" name="q36" value="d"> इंग्लैंड</label>
+            </div>
+            <button onclick="checkAnswer('q36', 'b')">उत्तर जांचें</button>
+            <div id="q36-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 37: कोलंबस ने कितनी यात्राएं की थीं?</p>
+            <div class="options">
+                <label><input type="radio" name="q37" value="a"> एक</label>
+                <label><input type="radio" name="q37" value="b"> दो</label>
+                <label><input type="radio" name="q37" value="c"> तीन</label>
+                <label><input type="radio" name="q37" value="d"> चार</label>
+            </div>
+            <button onclick="checkAnswer('q37', 'd')">उत्तर जांचें</button>
+            <div id="q37-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 38: कोलंबस ने अपनी पहली यात्रा में कहाँ पर पैर रखा था?</p>
+            <div class="options">
+                <label><input type="radio" name="q38" value="a"> क्यूबा</label>
+                <label><input type="radio" name="q38" value="b"> बहामास</label>
+                <label><input type="radio" name="q38" value="c"> जमैका</label>
+                <label><input type="radio" name="q38" value="d"> प्यूर्टो रिको</label>
+            </div>
+            <button onclick="checkAnswer('q38', 'b')">उत्तर जांचें</button>
+            <div id="q38-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 39: आधुनिक खोजों का क्या प्रभाव था?</p>
+            <div class="options">
+                <label><input type="radio" name="q39" value="a"> नई संस्कृतियों का सामना</label>
+                <label><input type="radio" name="q39" value="b"> व्यापारिक मार्गों का विकास</label>
+                <label><input type="radio" name="q39" value="c"> औपनिवेशिक विस्तार</label>
+                <label><input type="radio" name="q39" value="d"> उपरोक्त सभी</label>
+            </div>
+            <button onclick="checkAnswer('q39', 'd')">उत्तर जांचें</button>
+            <div id="q39-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 40: आधुनिक युग के प्रारंभ में किस देश ने सबसे पहले अफ्रीका के पश्चिमी तट की खोज की?</p>
+            <div class="options">
+                <label><input type="radio" name="q40" value="a"> इंग्लैंड</label>
+                <label><input type="radio" name="q40" value="b"> फ्रांस</label>
+                <label><input type="radio" name="q40" value="c"> पुर्तगाल</label>
+                <label><input type="radio" name="q40" value="d"> स्पेन</label>
+            </div>
+            <button onclick="checkAnswer('q40', 'c')">उत्तर जांचें</button>
+            <div id="q40-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 41: किस खोजकर्ता ने ब्राज़ील की खोज की थी?</p>
+            <div class="options">
+                <label><input type="radio" name="q41" value="a"> कोलंबस</label>
+                <label><input type="radio" name="q41" value="b"> वास्को डी गामा</label>
+                <label><input type="radio" name="q41" value="c"> पेड्रो अल्वारेस कबराल</label>
+                <label><input type="radio" name="q41" value="d"> हेनरी द नेविगेटर</label>
+            </div>
+            <button onclick="checkAnswer('q41', 'c')">उत्तर जांचें</button>
+            <div id="q41-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 42: आधुनिक खोजों का प्रमुख आर्थिक लाभ क्या था?</p>
+            <div class="options">
+                <label><input type="radio" name="q42" value="a"> कृषि का विकास</label>
+                <label><input type="radio" name="q42" value="b"> व्यापारिक मार्गों का विस्तार</label>
+                <label><input type="radio" name="q42" value="c"> औद्योगिक क्रांति</label>
+                <label><input type="radio" name="q42" value="d"> विज्ञान और तकनीकी का विकास</label>
+            </div>
+            <button onclick="checkAnswer('q42', 'b')">उत्तर जांचें</button>
+            <div id="q42-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 43: कोलंबस के अनुसार वह किस महाद्वीप की खोज कर रहा था?</p>
+            <div class="options">
+                <label><input type="radio" name="q43" value="a"> एशिया</label>
+                <label><input type="radio" name="q43" value="b"> अफ्रीका</label>
+                <label><input type="radio" name="q43" value="c"> अमेरिका</label>
+                <label><input type="radio" name="q43" value="d"> ऑस्ट्रेलिया</label>
+            </div>
+            <button onclick="checkAnswer('q43', 'a')">उत्तर जांचें</button>
+            <div id="q43-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 44: किसके द्वारा दक्षिण अमेरिका के अमेज़न नदी की खोज की गई थी?</p>
+            <div class="options">
+                <label><input type="radio" name="q44" value="a"> कोलंबस</label>
+                <label><input type="radio" name="q44" value="b"> वास्को डी गामा</label>
+                <label><input type="radio" name="q44" value="c"> फ्रांसिस्को पिजारो</label>
+                <label><input type="radio" name="q44" value="d"> फ्रांसिस्को ओरेलाना</label>
+            </div>
+            <button onclick="checkAnswer('q44', 'd')">उत्तर जांचें</button>
+            <div id="q44-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 45: किसने पहली बार उत्तरी ध्रुव के रास्ते से एशिया पहुँचने की कोशिश की?</p>
+            <div class="options">
+                <label><input type="radio" name="q45" value="a"> जॉन कैबोट</label>
+                <label><input type="radio" name="q45" value="b"> हेनरी हडसन</label>
+                <label><input type="radio" name="q45" value="c"> मार्टिन फ्रॉबिशर</label>
+                <label><input type="radio" name="q45" value="d"> विलेम बैरेंट्स</label>
+            </div>
+            <button onclick="checkAnswer('q45', 'd')">उत्तर जांचें</button>
+            <div id="q45-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 46: किस यात्रा ने यह साबित किया कि पृथ्वी गोल है?</p>
+            <div class="options">
+                <label><input type="radio" name="q46" value="a"> कोलंबस की यात्रा</label>
+                <label><input type="radio" name="q46" value="b"> वास्को डी गामा की यात्रा</label>
+                <label><input type="radio" name="q46" value="c"> मैगेलन की यात्रा</label>
+                <label><input type="radio" name="q46" value="d"> बार्थोलोम्यू डियास की यात्रा</label>
+            </div>
+            <button onclick="checkAnswer('q46', 'c')">उत्तर जांचें</button>
+            <div id="q46-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 47: आधुनिक खोजों का मुख्य कारण क्या था?</p>
+            <div class="options">
+                <label><input type="radio" name="q47" value="a"> वैज्ञानिक अनुसंधान</label>
+                <label><input type="radio" name="q47" value="b"> राजनीतिक प्रभुत्व</label>
+                <label><input type="radio" name="q47" value="c"> व्यापारिक मार्गों की खोज</label>
+                <label><input type="radio" name="q47" value="d"> धार्मिक सुधार</label>
+            </div>
+            <button onclick="checkAnswer('q47', 'c')">उत्तर जांचें</button>
+            <div id="q47-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 48: किस खोजकर्ता ने केप ऑफ गुड होप के पार का मार्ग खोजा था?</p>
+            <div class="options">
+                <label><input type="radio" name="q48" value="a"> वास्को डी गामा</label>
+                <label><input type="radio" name="q48" value="b"> बार्थोलोम्यू डियास</label>
+                <label><input type="radio" name="q48" value="c"> कोलंबस</label>
+                <label><input type="radio" name="q48" value="d"> मैगेलन</label>
+            </div>
+            <button onclick="checkAnswer('q48', 'b')">उत्तर जांचें</button>
+            <div id="q48-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 49: किसने पहली बार अमेरिका के पश्चिमी तट का मानचित्रण किया?</p>
+            <div class="options">
+                <label><input type="radio" name="q49" value="a"> कोलंबस</label>
+                <label><input type="radio" name="q49" value="b"> वास्को डी गामा</label>
+                <label><input type="radio" name="q49" value="c"> जेम्स कुक</label>
+                <label><input type="radio" name="q49" value="d"> फर्डिनेंड मैगेलन</label>
+            </div>
+            <button onclick="checkAnswer('q49', 'd')">उत्तर जांचें</button>
+            <div id="q49-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 50: आधुनिक खोजों का परिणामस्वरूप कौन सी नई विश्वव्यापी प्रणाली स्थापित हुई?</p>
+            <div class="options">
+                <label><input type="radio" name="q50" value="a"> सामंतवाद</label>
+                <label><input type="radio" name="q50" value="b"> व्यापारिक साम्राज्यवाद</label>
+                <label><input type="radio" name="q50" value="c"> लोकतंत्र</label>
+                <label><input type="radio" name="q50" value="d"> साम्राज्यवाद</label>
+            </div>
+            <button onclick="checkAnswer('q50', 'b')">उत्तर जांचें</button>
+            <div id="q50-result" class="result"></div>
+        </div>
+
+    </div>
+
+    <script>
+        function checkAnswer(question, correctAnswer) {
+            var selectedOption = document.querySelector('input[name="' + question + '"]:checked');
+            var resultDiv = document.getElementById(question + '-result');
+            
+            if (selectedOption) {
+                if (selectedOption.value === correctAnswer) {
+                    resultDiv.textContent = 'सही उत्तर!';
+                    resultDiv.style.color = 'green';
+                } else {
+                    resultDiv.textContent = 'गलत उत्तर!';
+                    resultDiv.style.color = 'red';
+                }
+            } else {
+                resultDiv.textContent = 'कृपया एक विकल्प चुनें।';
+                resultDiv.style.color = 'orange';
+            }
+        }
+    </script>
+
+</body>
+</html>
+

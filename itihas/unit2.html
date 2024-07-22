@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>इकाई 2 - अमेरिकी स्वतंत्रता संग्राम</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        .question {
+            margin-bottom: 15px;
+        }
+        .question p {
+            margin: 0;
+            font-weight: bold;
+        }
+        .options {
+            margin-top: 5px;
+        }
+        .options label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .result {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            background-color: #007BFF;
+            color: #fff;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>इकाई 2 - अमेरिकी स्वतंत्रता संग्राम</h1>
+
+        <div class="question">
+            <p>प्रश्न 1: अमेरिकी स्वतंत्रता संग्राम की पृष्ठभूमि में कौन सी घटना प्रमुख थी?</p>
+            <div class="options">
+                <label><input type="radio" name="q1" value="a"> ग्लोरियस क्रांति</label>
+                <label><input type="radio" name="q1" value="b"> बोस्टन टी पार्टी</label>
+                <label><input type="radio" name="q1" value="c"> फ्रांसीसी क्रांति</label>
+                <label><input type="radio" name="q1" value="d"> औद्योगिक क्रांति</label>
+            </div>
+            <button onclick="checkAnswer('q1', 'b')">उत्तर जांचें</button>
+            <div id="q1-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 2: अमेरिकी स्वतंत्रता संग्राम का मुख्य कारण क्या था?</p>
+            <div class="options">
+                <label><input type="radio" name="q2" value="a"> धार्मिक असंतोष</label>
+                <label><input type="radio" name="q2" value="b"> आर्थिक शोषण</label>
+                <label><input type="radio" name="q2" value="c"> राजनीतिक अधिकारों की मांग</label>
+                <label><input type="radio" name="q2" value="d"> सांस्कृतिक भेदभाव</label>
+            </div>
+            <button onclick="checkAnswer('q2', 'c')">उत्तर जांचें</button>
+            <div id="q2-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 3: अमेरिकी स्वतंत्रता संग्राम का प्रारंभ कब हुआ?</p>
+            <div class="options">
+                <label><input type="radio" name="q3" value="a"> 1757</label>
+                <label><input type="radio" name="q3" value="b"> 1776</label>
+                <label><input type="radio" name="q3" value="c"> 1789</label>
+                <label><input type="radio" name="q3" value="d"> 1800</label>
+            </div>
+            <button onclick="checkAnswer('q3', 'b')">उत्तर जांचें</button>
+            <div id="q3-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 4: अमेरिकी स्वतंत्रता संग्राम का मुख्य परिणाम क्या था?</p>
+            <div class="options">
+                <label><input type="radio" name="q4" value="a"> ब्रिटिश शासन का अंत</label>
+                <label><input type="radio" name="q4" value="b"> फ्रांसीसी शासन की स्थापना</label>
+                <label><input type="radio" name="q4" value="c"> स्पेनिश शासन का विस्तार</label>
+                <label><input type="radio" name="q4" value="d"> अमेरिकी संविधान का निर्माण</label>
+            </div>
+            <button onclick="checkAnswer('q4', 'd')">उत्तर जांचें</button>
+            <div id="q4-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 5: अमेरिकी स्वतंत्रता संग्राम का प्रमुख नेता कौन था?</p>
+            <div class="options">
+                <label><input type="radio" name="q5" value="a"> जॉर्ज वॉशिंगटन</label>
+                <label><input type="radio" name="q5" value="b"> अब्राहम लिंकन</label>
+                <label><input type="radio" name="q5" value="c"> थॉमस जेफरसन</label>
+                <label><input type="radio" name="q5" value="d"> जॉन एडम्स</label>
+            </div>
+            <button onclick="checkAnswer('q5', 'a')">उत्तर जांचें</button>
+            <div id="q5-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 6: औद्योगिक क्रांति का अमेरिकी स्वतंत्रता संग्राम पर क्या प्रभाव था?</p>
+            <div class="options">
+                <label><input type="radio" name="q6" value="a"> कृषि का विकास</label>
+                <label><input type="radio" name="q6" value="b"> सैनिक शक्ति में वृद्धि</label>
+                <label><input type="radio" name="q6" value="c"> आर्थिक असंतोष</label>
+                <label><input type="radio" name="q6" value="d"> सामाजिक सुधार</label>
+            </div>
+            <button onclick="checkAnswer('q6', 'c')">उत्तर जांचें</button>
+            <div id="q6-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 7: किस संधि ने अमेरिकी स्वतंत्रता संग्राम को समाप्त किया?</p>
+            <div class="options">
+                <label><input type="radio" name="q7" value="a"> पेरिस संधि</label>
+                <label><input type="radio" name="q7" value="b"> वर्साय की संधि</label>
+                <label><input type="radio" name="q7" value="c"> जेनेवा संधि</label>
+                <label><input type="radio" name="q7" value="d"> वेस्टफेलिया की संधि</label>
+            </div>
+            <button onclick="checkAnswer('q7', 'a')">उत्तर जांचें</button>
+            <div id="q7-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 8: बोस्टन टी पार्टी किसका प्रतीक थी?</p>
+            <div class="options">
+                <label><input type="radio" name="q8" value="a"> धार्मिक स्वतंत्रता</label>
+                <label><input type="radio" name="q8" value="b"> आर्थिक शोषण के विरुद्ध विद्रोह</label>
+                <label><input type="radio" name="q8" value="c"> राजनीतिक स्वतंत्रता की मांग</label>
+                <label><input type="radio" name="q8" value="d"> सामाजिक सुधार</label>
+            </div>
+            <button onclick="checkAnswer('q8', 'b')">उत्तर जांचें</button>
+            <div id="q8-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 9: अमेरिकी स्वतंत्रता संग्राम के बाद किसने अमेरिका के प्रथम राष्ट्रपति का पद संभाला?</p>
+            <div class="options">
+                <label><input type="radio" name="q9" value="a"> जॉन एडम्स</label>
+                <label><input type="radio" name="q9" value="b"> थॉमस जेफरसन</label>
+                <label><input type="radio" name="q9" value="c"> जॉर्ज वॉशिंगटन</label>
+                <label><input type="radio" name="q9" value="d"> जेम्स मैडिसन</label>
+            </div>
+            <button onclick="checkAnswer('q9', 'c')">उत्तर जांचें</button>
+            <div id="q9-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 10: अमेरिकी स्वतंत्रता संग्राम का सबसे बड़ा परिणाम क्या था?</p>
+            <div class="options">
+                <label><input type="radio" name="q10" value="a"> नई तकनीकों का विकास</label>
+                <label><input type="radio" name="q10" value="b"> उपनिवेशवाद का अंत</label>
+                <label><input type="radio" name="q10" value="c"> स्वतंत्रता और लोकतंत्र की स्थापना</label>
+                <label><input type="radio" name="q10" value="d"> धार्मिक सुधार</label>
+            </div>
+            <button onclick="checkAnswer('q10', 'c')">उत्तर जांचें</button>
+            <div id="q10-result" class="result"></div>
+        </div>
+        
+        <div class="question">
+            <p>प्रश्न 11: अमेरिकी स्वतंत्रता संग्राम के दौरान 13 उपनिवेशों ने किस वर्ष स्वतंत्रता की घोषणा की?</p>
+            <div class="options">
+                <label><input type="radio" name="q11" value="a"> 1750</label>
+                <label><input type="radio" name="q11" value="b"> 1765</label>
+                <label><input type="radio" name="q11" value="c"> 1776</label>
+                <label><input type="radio" name="q11" value="d"> 1783</label>
+            </div>
+            <button onclick="checkAnswer('q11', 'c')">उत्तर जांचें</button>
+            <div id="q11-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 12: स्वतंत्रता की घोषणा के प्रारूप को किसने लिखा था?</p>
+            <div class="options">
+                <label><input type="radio" name="q12" value="a"> जॉर्ज वॉशिंगटन</label>
+                <label><input type="radio" name="q12" value="b"> जॉन एडम्स</label>
+                <label><input type="radio" name="q12" value="c"> बेंजामिन फ्रैंकलिन</label>
+                <label><input type="radio" name="q12" value="d"> थॉमस जेफरसन</label>
+            </div>
+            <button onclick="checkAnswer('q12', 'd')">उत्तर जांचें</button>
+            <div id="q12-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 13: अमेरिकी स्वतंत्रता संग्राम में किस देश ने उपनिवेशों की सहायता की?</p>
+            <div class="options">
+                <label><input type="radio" name="q13" value="a"> स्पेन</label>
+                <label><input type="radio" name="q13" value="b"> फ्रांस</label>
+                <label><input type="radio" name="q13" value="c"> पुर्तगाल</label>
+                <label><input type="radio" name="q13" value="d"> जर्मनी</label>
+            </div>
+            <button onclick="checkAnswer('q13', 'b')">उत्तर जांचें</button>
+            <div id="q13-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 14: अमेरिकी स्वतंत्रता संग्राम का महत्वपूर्ण युद्ध कौन सा था?</p>
+            <div class="options">
+                <label><input type="radio" name="q14" value="a"> बोस्टन युद्ध</label>
+                <label><input type="radio" name="q14" value="b"> यॉर्कटाउन की लड़ाई</label>
+                <label><input type="radio" name="q14" value="c"> गेटिसबर्ग की लड़ाई</label>
+                <label><input type="radio" name="q14" value="d"> लेक एरी की लड़ाई</label>
+            </div>
+            <button onclick="checkAnswer('q14', 'b')">उत्तर जांचें</button>
+            <div id="q14-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 15: अमेरिकी स्वतंत्रता संग्राम के दौरान कौन सी घटना सबसे पहले घटी थी?</p>
+            <div class="options">
+                <label><input type="radio" name="q15" value="a"> लेक्सिंगटन और कॉनकॉर्ड की लड़ाई</label>
+                <label><input type="radio" name="q15" value="b"> बोस्टन टी पार्टी</label>
+                <label><input type="radio" name="q15" value="c"> स्वतंत्रता की घोषणा</label>
+                <label><input type="radio" name="q15" value="d"> यॉर्कटाउन की लड़ाई</label>
+            </div>
+            <button onclick="checkAnswer('q15', 'a')">उत्तर जांचें</button>
+            <div id="q15-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 16: अमेरिकी स्वतंत्रता संग्राम का नारा क्या था?</p>
+            <div class="options">
+                <label><input type="radio" name="q16" value="a"> "नो टैक्सेशन विदआउट रिप्रेजेंटेशन"</label>
+                <label><input type="radio" name="q16" value="b"> "लिबर्टी, इक्वालिटी, फ्रेटरनिटी"</label>
+                <label><input type="radio" name="q16" value="c"> "फ्रीडम या डेथ"</label>
+                <label><input type="radio" name="q16" value="d"> "गिव मी लिबर्टी या गिव मी डेथ"</label>
+            </div>
+            <button onclick="checkAnswer('q16', 'a')">उत्तर जांचें</button>
+            <div id="q16-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 17: अमेरिकी स्वतंत्रता संग्राम के दौरान उपनिवेशों के प्रमुख जनरल कौन थे?</p>
+            <div class="options">
+                <label><input type="radio" name="q17" value="a"> थॉमस जेफरसन</label>
+                <label><input type="radio" name="q17" value="b"> जॉन एडम्स</label>
+                <label><input type="radio" name="q17" value="c"> जॉर्ज वॉशिंगटन</label>
+                <label><input type="radio" name="q17" value="d"> अलेक्जेंडर हैमिल्टन</label>
+            </div>
+            <button onclick="checkAnswer('q17', 'c')">उत्तर जांचें</button>
+            <div id="q17-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 18: अमेरिकी स्वतंत्रता संग्राम का सबसे महत्वपूर्ण दस्तावेज कौन सा था?</p>
+            <div class="options">
+                <label><input type="radio" name="q18" value="a"> स्वतंत्रता की घोषणा</label>
+                <label><input type="radio" name="q18" value="b"> अमेरिकी संविधान</label>
+                <label><input type="radio" name="q18" value="c"> पेरिस संधि</label>
+                <label><input type="radio" name="q18" value="d"> मैग्ना कार्टा</label>
+            </div>
+            <button onclick="checkAnswer('q18', 'a')">उत्तर जांचें</button>
+            <div id="q18-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 19: औद्योगिक क्रांति के दौरान अमेरिका में सबसे अधिक किसका उत्पादन हुआ?</p>
+            <div class="options">
+                <label><input type="radio" name="q19" value="a"> स्टील</label>
+                <label><input type="radio" name="q19" value="b"> कपास</label>
+                <label><input type="radio" name="q19" value="c"> कोयला</label>
+                <label><input type="radio" name="q19" value="d"> चीनी</label>
+            </div>
+            <button onclick="checkAnswer('q19', 'b')">उत्तर जांचें</button>
+            <div id="q19-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 20: किस अधिनियम ने अमेरिकी उपनिवेशों में असंतोष को बढ़ावा दिया?</p>
+            <div class="options">
+                <label><input type="radio" name="q20" value="a"> स्टैम्प अधिनियम</label>
+                <label><input type="radio" name="q20" value="b"> टी अधिनियम</label>
+                <label><input type="radio" name="q20" value="c"> सुगर अधिनियम</label>
+                <label><input type="radio" name="q20" value="d"> सभी उपरोक्त</label>
+            </div>
+            <button onclick="checkAnswer('q20', 'd')">उत्तर जांचें</button>
+            <div id="q20-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 21: स्वतंत्रता की घोषणा कब की गई थी?</p>
+            <div class="options">
+                <label><input type="radio" name="q21" value="a"> 4 जुलाई 1776</label>
+                <label><input type="radio" name="q21" value="b"> 15 अगस्त 1776</label>
+                <label><input type="radio" name="q21" value="c"> 1 जनवरी 1777</label>
+                <label><input type="radio" name="q21" value="d"> 25 दिसंबर 1776</label>
+            </div>
+            <button onclick="checkAnswer('q21', 'a')">उत्तर जांचें</button>
+            <div id="q21-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 22: अमेरिकी स्वतंत्रता संग्राम का सबसे महत्वपूर्ण आर्थिक कारण क्या था?</p>
+            <div class="options">
+                <label><input type="radio" name="q22" value="a"> कराधान</label>
+                <label><input type="radio" name="q22" value="b"> धार्मिक असंतोष</label>
+                <label><input type="radio" name="q22" value="c"> सामाजिक भेदभाव</label>
+                <label><input type="radio" name="q22" value="d"> भूमि विवाद</label>
+            </div>
+            <button onclick="checkAnswer('q22', 'a')">उत्तर जांचें</button>
+            <div id="q22-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 23: अमेरिकी स्वतंत्रता संग्राम के दौरान किन्होंने "कमेटीज ऑफ कॉरस्पॉन्डेंस" की स्थापना की?</p>
+            <div class="options">
+                <label><input type="radio" name="q23" value="a"> थॉमस पेन</label>
+                <label><input type="radio" name="q23" value="b"> सैमुअल एडम्स</label>
+                <label><input type="radio" name="q23" value="c"> पॉल रिवियर</label>
+                <label><input type="radio" name="q23" value="d"> बेंजामिन फ्रैंकलिन</label>
+            </div>
+            <button onclick="checkAnswer('q23', 'b')">उत्तर जांचें</button>
+            <div id="q23-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 24: कौन सी संधि ने अमेरिकी स्वतंत्रता संग्राम को समाप्त किया?</p>
+            <div class="options">
+                <label><input type="radio" name="q24" value="a"> जे संधि</label>
+                <label><input type="radio" name="q24" value="b"> पेरिस संधि</label>
+                <label><input type="radio" name="q24" value="c"> गेंट संधि</label>
+                <label><input type="radio" name="q24" value="d"> वर्साय संधि</label>
+            </div>
+            <button onclick="checkAnswer('q24', 'b')">उत्तर जांचें</button>
+            <div id="q24-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 25: स्वतंत्रता संग्राम के समय अमेरिका का सबसे प्रमुख औद्योगिक शहर कौन सा था?</p>
+            <div class="options">
+                <label><input type="radio" name="q25" value="a"> न्यूयॉर्क</label>
+                <label><input type="radio" name="q25" value="b"> बोस्टन</label>
+                <label><input type="radio" name="q25" value="c"> फिलाडेल्फिया</label>
+                <label><input type="radio" name="q25" value="d"> चार्ल्सटन</label>
+            </div>
+            <button onclick="checkAnswer('q25', 'c')">उत्तर जांचें</button>
+            <div id="q25-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 26: अमेरिकी स्वतंत्रता संग्राम के दौरान कौन सी प्रमुख विचारधारा का उदय हुआ?</p>
+            <div class="options">
+                <label><input type="radio" name="q26" value="a"> साम्यवाद</label>
+                <label><input type="radio" name="q26" value="b"> समाजवाद</label>
+                <label><input type="radio" name="q26" value="c"> लोकतंत्र</label>
+                <label><input type="radio" name="q26" value="d"> साम्राज्यवाद</label>
+            </div>
+            <button onclick="checkAnswer('q26', 'c')">उत्तर जांचें</button>
+            <div id="q26-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 27: अमेरिकी स्वतंत्रता संग्राम के बाद अमेरिका का पहला संविधान कौन सा था?</p>
+            <div class="options">
+                <label><input type="radio" name="q27" value="a"> द फेडरलिस्ट पेपर्स</label>
+                <label><input type="radio" name="q27" value="b"> आर्टिकल्स ऑफ कॉन्फेडरेशन</label>
+                <label><input type="radio" name="q27" value="c"> डिक्लेरेशन ऑफ इंडिपेंडेंस</label>
+                <label><input type="radio" name="q27" value="d"> बिल ऑफ राइट्स</label>
+            </div>
+            <button onclick="checkAnswer('q27', 'b')">उत्तर जांचें</button>
+            <div id="q27-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 28: अमेरिकी स्वतंत्रता संग्राम के समय ब्रिटेन का राजा कौन था?</p>
+            <div class="options">
+                <label><input type="radio" name="q28" value="a"> जॉर्ज II</label>
+                <label><input type="radio" name="q28" value="b"> जॉर्ज III</label>
+                <label><input type="radio" name="q28" value="c"> चार्ल्स II</label>
+                <label><input type="radio" name="q28" value="d"> चार्ल्स III</label>
+            </div>
+            <button onclick="checkAnswer('q28', 'b')">उत्तर जांचें</button>
+            <div id="q28-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 29: अमेरिकी स्वतंत्रता संग्राम के बाद किन्हें "संविधान का पिता" कहा जाता है?</p>
+            <div class="options">
+                <label><input type="radio" name="q29" value="a"> थॉमस जेफरसन</label>
+                <label><input type="radio" name="q29" value="b"> जॉर्ज वॉशिंगटन</label>
+                <label><input type="radio" name="q29" value="c"> जेम्स मैडिसन</label>
+                <label><input type="radio" name="q29" value="d"> अलेक्जेंडर हैमिल्टन</label>
+            </div>
+            <button onclick="checkAnswer('q29', 'c')">उत्तर जांचें</button>
+            <div id="q29-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 30: अमेरिकी स्वतंत्रता संग्राम के दौरान किस प्रसिद्ध लेखक ने "कॉमन सेंस" पुस्तक लिखी?</p>
+            <div class="options">
+                <label><input type="radio" name="q30" value="a"> जॉन लॉक</label>
+                <label><input type="radio" name="q30" value="b"> थॉमस पेन</label>
+                <label><input type="radio" name="q30" value="c"> जेम्स मैडिसन</label>
+                <label><input type="radio" name="q30" value="d"> बेंजामिन फ्रैंकलिन</label>
+            </div>
+            <button onclick="checkAnswer('q30', 'b')">उत्तर जांचें</button>
+            <div id="q30-result" class="result"></div>
+        </div>
+        
+        
+
+    </div>
+
+    <script>
+        function checkAnswer(question, correctAnswer) {
+            var selectedOption = document.querySelector('input[name="' + question + '"]:checked');
+            var resultDiv = document.getElementById(question + '-result');
+            
+            if (selectedOption) {
+                if (selectedOption.value === correctAnswer) {
+                    resultDiv.textContent = 'सही उत्तर!';
+                    resultDiv.style.color = 'green';
+                } else {
+                    resultDiv.textContent = 'गलत उत्तर!';
+                    resultDiv.style.color = 'red';
+                }
+            } else {
+                resultDiv.textContent = 'कृपया एक विकल्प चुनें।';
+                resultDiv.style.color = 'orange';
+            }
+        }
+    </script>
+
+</body>
+</html>
