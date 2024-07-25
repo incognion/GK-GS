@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>इकाई 3 - फ्रांस की क्रांति</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="../script.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>इकाई 3 - फ्रांस की क्रांति</h1>
+
+        <div class="question">
+            <p>प्रश्न 1: फ्रांस की पुरातन व्यवस्था में समाज के कितने वर्ग थे?</p>
+            <div class="options">
+                <label><input type="radio" name="q1" value="a"> दो</label>
+                <label><input type="radio" name="q1" value="b"> तीन</label>
+                <label><input type="radio" name="q1" value="c"> चार</label>
+                <label><input type="radio" name="q1" value="d"> पाँच</label>
+            </div>
+            <button onclick="checkAnswer('q1', 'b')">उत्तर जांचें</button>
+            <div id="q1-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 2: फ्रांस की क्रांति से पहले किस वर्ग के लोग सबसे अधिक कर का भुगतान करते थे?</p>
+            <div class="options">
+                <label><input type="radio" name="q2" value="a"> पादरी वर्ग</label>
+                <label><input type="radio" name="q2" value="b"> कुलीन वर्ग</label>
+                <label><input type="radio" name="q2" value="c"> तीसरा वर्ग</label>
+                <label><input type="radio" name="q2" value="d"> राजपरिवार</label>
+            </div>
+            <button onclick="checkAnswer('q2', 'c')">उत्तर जांचें</button>
+            <div id="q2-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 3: फ्रांसीसी समाज का कौन सा वर्ग "तीसरा वर्ग" कहलाता था?</p>
+            <div class="options">
+                <label><input type="radio" name="q3" value="a"> पादरी</label>
+                <label><input type="radio" name="q3" value="b"> किसान और व्यापारी</label>
+                <label><input type="radio" name="q3" value="c"> राजकर्मी</label>
+                <label><input type="radio" name="q3" value="d"> सैनिक</label>
+            </div>
+            <button onclick="checkAnswer('q3', 'b')">उत्तर जांचें</button>
+            <div id="q3-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 4: फ्रांस की क्रांति का प्रमुख कारण क्या था?</p>
+            <div class="options">
+                <label><input type="radio" name="q4" value="a"> आर्थिक संकट</label>
+                <label><input type="radio" name="q4" value="b"> धार्मिक असंतोष</label>
+                <label><input type="radio" name="q4" value="c"> सामाजिक असमानता</label>
+                <label><input type="radio" name="q4" value="d"> सभी उपरोक्त</label>
+            </div>
+            <button onclick="checkAnswer('q4', 'd')">उत्तर जांचें</button>
+            <div id="q4-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 5: फ्रांसीसी क्रांति की शुरुआत किस घटना से मानी जाती है?</p>
+            <div class="options">
+                <label><input type="radio" name="q5" value="a"> बास्तील का पतन</label>
+                <label><input type="radio" name="q5" value="b"> वर्साय की बैठक</label>
+                <label><input type="radio" name="q5" value="c"> द रेन ऑफ टेरर</label>
+                <label><input type="radio" name="q5" value="d"> नेपोलियन का उदय</label>
+            </div>
+            <button onclick="checkAnswer('q5', 'a')">उत्तर जांचें</button>
+            <div id="q5-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 6: फ्रांस की क्रांति कब शुरू हुई थी?</p>
+            <div class="options">
+                <label><input type="radio" name="q6" value="a"> 1785</label>
+                <label><input type="radio" name="q6" value="b"> 1789</label>
+                <label><input type="radio" name="q6" value="c"> 1792</label>
+                <label><input type="radio" name="q6" value="d"> 1795</label>
+            </div>
+            <button onclick="checkAnswer('q6', 'b')">उत्तर जांचें</button>
+            <div id="q6-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 7: फ्रांस की क्रांति के दौरान "डिक्लेरेशन ऑफ द राइट्स ऑफ मैन एंड ऑफ द सिटिजन" किस वर्ष जारी हुआ
+                था?</p>
+            <div class="options">
+                <label><input type="radio" name="q7" value="a"> 1787</label>
+                <label><input type="radio" name="q7" value="b"> 1789</label>
+                <label><input type="radio" name="q7" value="c"> 1791</label>
+                <label><input type="radio" name="q7" value="d"> 1793</label>
+            </div>
+            <button onclick="checkAnswer('q7', 'b')">उत्तर जांचें</button>
+            <div id="q7-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 8: फ्रांस की क्रांति का प्रमुख विचारक कौन था?</p>
+            <div class="options">
+                <label><input type="radio" name="q8" value="a"> रूसो</label>
+                <label><input type="radio" name="q8" value="b"> लॉक</label>
+                <label><input type="radio" name="q8" value="c"> होब्स</label>
+                <label><input type="radio" name="q8" value="d"> मोन्तेस्क्यू</label>
+            </div>
+            <button onclick="checkAnswer('q8', 'a')">उत्तर जांचें</button>
+            <div id="q8-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 9: फ्रांसीसी क्रांति के दौरान किसने "लेवीस थियरे" नामक पुस्तक लिखी?</p>
+            <div class="options">
+                <label><input type="radio" name="q9" value="a"> रूसो</label>
+                <label><input type="radio" name="q9" value="b"> वोल्टेयर</label>
+                <label><input type="radio" name="q9" value="c"> मिराबो</label>
+                <label><input type="radio" name="q9" value="d"> रोबेस्पियर</label>
+            </div>
+            <button onclick="checkAnswer('q9', 'b')">उत्तर जांचें</button>
+            <div id="q9-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 10: फ्रांसीसी क्रांति के समय "नेशनल असेंबली" का गठन कब हुआ?</p>
+            <div class="options">
+                <label><input type="radio" name="q10" value="a"> 1787</label>
+                <label><input type="radio" name="q10" value="b"> 1788</label>
+                <label><input type="radio" name="q10" value="c"> 1789</label>
+                <label><input type="radio" name="q10" value="d"> 1790</label>
+            </div>
+            <button onclick="checkAnswer('q10', 'c')">उत्तर जांचें</button>
+            <div id="q10-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 11: फ्रांस की क्रांति के दौरान "रेन ऑफ टेरर" का नेतृत्व किसने किया?</p>
+            <div class="options">
+                <label><input type="radio" name="q11" value="a"> नेपोलियन</label>
+                <label><input type="radio" name="q11" value="b"> लुई XVI</label>
+                <label><input type="radio" name="q11" value="c"> रोबेस्पियर</label>
+                <label><input type="radio" name="q11" value="d"> दांटन</label>
+            </div>
+            <button onclick="checkAnswer('q11', 'c')">उत्तर जांचें</button>
+            <div id="q11-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 12: फ्रांस की क्रांति के दौरान बास्तील का पतन कब हुआ?</p>
+            <div class="options">
+                <label><input type="radio" name="q12" value="a"> 14 जुलाई 1789</label>
+                <label><input type="radio" name="q12" value="b"> 4 अगस्त 1789</label>
+                <label><input type="radio" name="q12" value="c"> 26 अगस्त 1789</label>
+                <label><input type="radio" name="q12" value="d"> 6 अक्टूबर 1789</label>
+            </div>
+            <button onclick="checkAnswer('q12', 'a')">उत्तर जांचें</button>
+            <div id="q12-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 13: फ्रांस की क्रांति के समय "स्टेट्स जनरल" की बैठक कब बुलाई गई थी?</p>
+            <div class="options">
+                <label><input type="radio" name="q13" value="a"> मई 1789</label>
+                <label><input type="radio" name="q13" value="b"> जून 1789</label>
+                <label><input type="radio" name="q13" value="c"> जुलाई 1789</label>
+                <label><input type="radio" name="q13" value="d"> अगस्त 1789</label>
+            </div>
+            <button onclick="checkAnswer('q13', 'a')">उत्तर जांचें</button>
+            <div id="q13-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 14: फ्रांस की क्रांति के दौरान किसने "जनरल विल" का सिद्धांत प्रस्तुत किया?</p>
+            <div class="options">
+                <label><input type="radio" name="q14" value="a"> रूसो</label>
+                <label><input type="radio" name="q14" value="b"> वोल्टेयर</label>
+                <label><input type="radio" name="q14" value="c"> होब्स</label>
+                <label><input type="radio" name="q14" value="d"> मॉन्टेस्क्यू</label>
+            </div>
+            <button onclick="checkAnswer('q14', 'a')">उत्तर जांचें</button>
+            <div id="q14-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 15: फ्रांस की क्रांति के दौरान "जेकबिन क्लब" का नेता कौन था?</p>
+            <div class="options">
+                <label><input type="radio" name="q15" value="a"> नेपोलियन</label>
+                <label><input type="radio" name="q15" value="b"> रोबेस्पियर</label>
+                <label><input type="radio" name="q15" value="c"> मिराबो</label>
+                <label><input type="radio" name="q15" value="d"> दांटन</label>
+            </div>
+            <button onclick="checkAnswer('q15', 'b')">उत्तर जांचें</button>
+            <div id="q15-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 16: फ्रांसीसी क्रांति के परिणामस्वरूप किसे समाप्त कर दिया गया?</p>
+            <div class="options">
+                <label><input type="radio" name="q16" value="a"> राजशाही</label>
+                <label><input type="radio" name="q16" value="b"> पादरी वर्ग</label>
+                <label><input type="radio" name="q16" value="c"> सामंतवाद</label>
+                <label><input type="radio" name="q16" value="d"> सभी उपरोक्त</label>
+            </div>
+            <button onclick="checkAnswer('q16', 'd')">उत्तर जांचें</button>
+            <div id="q16-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 17: फ्रांसीसी क्रांति के दौरान "द रेन ऑफ टेरर" की अवधि कब थी?</p>
+            <div class="options">
+                <label><input type="radio" name="q17" value="a"> 1791-1792</label>
+                <label><input type="radio" name="q17" value="b"> 1792-1793</label>
+                <label><input type="radio" name="q17" value="c"> 1793-1794</label>
+                <label><input type="radio" name="q17" value="d"> 1794-1795</label>
+            </div>
+            <button onclick="checkAnswer('q17', 'c')">उत्तर जांचें</button>
+            <div id="q17-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 18: फ्रांसीसी क्रांति के दौरान "द कंसुलर सरकार" का गठन कब हुआ?</p>
+            <div class="options">
+                <label><input type="radio" name="q18" value="a"> 1797</label>
+                <label><input type="radio" name="q18" value="b"> 1799</label>
+                <label><input type="radio" name="q18" value="c"> 1801</label>
+                <label><input type="radio" name="q18" value="d"> 1804</label>
+            </div>
+            <button onclick="checkAnswer('q18', 'b')">उत्तर जांचें</button>
+            <div id="q18-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 19: फ्रांसीसी क्रांति के बाद "नैपोलियन कोड" किस वर्ष पेश किया गया?</p>
+            <div class="options">
+                <label><input type="radio" name="q19" value="a"> 1801</label>
+                <label><input type="radio" name="q19" value="b"> 1804</label>
+                <label><input type="radio" name="q19" value="c"> 1810</label>
+                <label><input type="radio" name="q19" value="d"> 1815</label>
+            </div>
+            <button onclick="checkAnswer('q19', 'b')">उत्तर जांचें</button>
+            <div id="q19-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 20: फ्रांसीसी क्रांति के समय "सर्वोच्च प्राणी" की पूजा का क्या उद्देश्य था?</p>
+            <div class="options">
+                <label><input type="radio" name="q20" value="a"> धार्मिक पुनर्जागरण</label>
+                <label><input type="radio" name="q20" value="b"> राज्य की पंथनिरपेक्षता</label>
+                <label><input type="radio" name="q20" value="c"> सामाजिक सुधार</label>
+                <label><input type="radio" name="q20" value="d"> क्रांतिकारी भव्यता</label>
+            </div>
+            <button onclick="checkAnswer('q20', 'b')">उत्तर जांचें</button>
+            <div id="q20-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 21: फ्रांसीसी क्रांति के दौरान "डायरेक्टरी" किस प्रकार का शासन था?</p>
+            <div class="options">
+                <label><input type="radio" name="q21" value="a"> सामंती</label>
+                <label><input type="radio" name="q21" value="b"> गणतांत्रिक</label>
+                <label><input type="radio" name="q21" value="c"> तानाशाही</label>
+                <label><input type="radio" name="q21" value="d"> ओलिगार्ची</label>
+            </div>
+            <button onclick="checkAnswer('q21', 'b')">उत्तर जांचें</button>
+            <div id="q21-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 22: फ्रांसीसी क्रांति के बाद "लुइस XVI" की मृत्यु किस प्रकार की गई?</p>
+            <div class="options">
+                <label><input type="radio" name="q22" value="a"> फांसी</label>
+                <label><input type="radio" name="q22" value="b"> गोलीबारी</label>
+                <label><input type="radio" name="q22" value="c"> निष्कासन</label>
+                <label><input type="radio" name="q22" value="d"> प्राकृतिक मृत्यु</label>
+            </div>
+            <button onclick="checkAnswer('q22', 'a')">उत्तर जांचें</button>
+            <div id="q22-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 23: फ्रांसीसी क्रांति के दौरान "ट्रॉयल्स ऑफ द रेवोल्यूशन" का क्या अर्थ था?</p>
+            <div class="options">
+                <label><input type="radio" name="q23" value="a"> सामाजिक न्याय</label>
+                <label><input type="radio" name="q23" value="b"> क्रांतिकारी प्रक्रिया</label>
+                <label><input type="radio" name="q23" value="c"> आर्थिक सुधार</label>
+                <label><input type="radio" name="q23" value="d"> पंथनिरपेक्षता</label>
+            </div>
+            <button onclick="checkAnswer('q23', 'b')">उत्तर जांचें</button>
+            <div id="q23-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 24: फ्रांसीसी क्रांति के दौरान "कम्यून" का क्या महत्व था?</p>
+            <div class="options">
+                <label><input type="radio" name="q24" value="a"> लोकल प्रशासन</label>
+                <label><input type="radio" name="q24" value="b"> न्यायपालिका</label>
+                <label><input type="radio" name="q24" value="c"> सैन्य बल</label>
+                <label><input type="radio" name="q24" value="d"> धार्मिक संघ</label>
+            </div>
+            <button onclick="checkAnswer('q24', 'a')">उत्तर जांचें</button>
+            <div id="q24-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 25: फ्रांसीसी क्रांति के दौरान "पेरिस कोम्यून" का गठन कब हुआ था?</p>
+            <div class="options">
+                <label><input type="radio" name="q25" value="a"> 1789</label>
+                <label><input type="radio" name="q25" value="b"> 1792</label>
+                <label><input type="radio" name="q25" value="c"> 1793</label>
+                <label><input type="radio" name="q25" value="d"> 1794</label>
+            </div>
+            <button onclick="checkAnswer('q25', 'c')">उत्तर जांचें</button>
+            <div id="q25-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 26: फ्रांसीसी क्रांति के दौरान "गिरोनडिन्स" कौन थे?</p>
+            <div class="options">
+                <label><input type="radio" name="q26" value="a"> एक राजनीतिक समूह</label>
+                <label><input type="radio" name="q26" value="b"> एक सेना</label>
+                <label><input type="radio" name="q26" value="c"> एक धार्मिक समुदाय</label>
+                <label><input type="radio" name="q26" value="d"> एक आर्थिक वर्ग</label>
+            </div>
+            <button onclick="checkAnswer('q26', 'a')">उत्तर जांचें</button>
+            <div id="q26-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 27: फ्रांसीसी क्रांति के दौरान "जेकबिन्स" के नेता कौन थे?</p>
+            <div class="options">
+                <label><input type="radio" name="q27" value="a"> नेपोलियन</label>
+                <label><input type="radio" name="q27" value="b"> रोबेस्पियर</label>
+                <label><input type="radio" name="q27" value="c"> दांटन</label>
+                <label><input type="radio" name="q27" value="d"> मिराबो</label>
+            </div>
+            <button onclick="checkAnswer('q27', 'b')">उत्तर जांचें</button>
+            <div id="q27-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 28: फ्रांसीसी क्रांति के समय "मैरे" का क्या मतलब था?</p>
+            <div class="options">
+                <label><input type="radio" name="q28" value="a"> नगर प्रमुख</label>
+                <label><input type="radio" name="q28" value="b"> सैन्य प्रमुख</label>
+                <label><input type="radio" name="q28" value="c"> न्यायाधीश</label>
+                <label><input type="radio" name="q28" value="d"> मंत्री</label>
+            </div>
+            <button onclick="checkAnswer('q28', 'a')">उत्तर जांचें</button>
+            <div id="q28-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 29: फ्रांसीसी क्रांति के दौरान "बास्तील" की जेल को क्यों तोड़ा गया?</p>
+            <div class="options">
+                <label><input type="radio" name="q29" value="a"> राजनीतिक विरोधियों की गिरफ्तारी के लिए</label>
+                <label><input type="radio" name="q29" value="b"> खाद्य आपूर्ति के लिए</label>
+                <label><input type="radio" name="q29" value="c"> सैन्य मुख्यालय के रूप में</label>
+                <label><input type="radio" name="q29" value="d"> आर्थिक गतिविधियों के लिए</label>
+            </div>
+            <button onclick="checkAnswer('q29', 'a')">उत्तर जांचें</button>
+            <div id="q29-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 30: फ्रांसीसी क्रांति के दौरान "कंटिनेंटल सिस्टम" का क्या उद्देश्य था?</p>
+            <div class="options">
+                <label><input type="radio" name="q30" value="a"> ब्रिटेन के साथ व्यापार को रोकना</label>
+                <label><input type="radio" name="q30" value="b"> सम्राटों की शक्तियों को बढ़ाना</label>
+                <label><input type="radio" name="q30" value="c"> राजनीतिक संधियों को समाप्त करना</label>
+                <label><input type="radio" name="q30" value="d"> नागरिक स्वतंत्रताओं को बढ़ाना</label>
+            </div>
+            <button onclick="checkAnswer('q30', 'a')">उत्तर जांचें</button>
+            <div id="q30-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 31: फ्रांसीसी क्रांति के दौरान "फ्रांसिसीम" का क्या मतलब था?</p>
+            <div class="options">
+                <label><input type="radio" name="q31" value="a"> आंतरिक सुधार</label>
+                <label><input type="radio" name="q31" value="b"> बाहरी आक्रमण</label>
+                <label><input type="radio" name="q31" value="c"> संविधानिक सुधार</label>
+                <label><input type="radio" name="q31" value="d"> राजनीतिक प्रतिशोध</label>
+            </div>
+            <button onclick="checkAnswer('q31', 'c')">उत्तर जांचें</button>
+            <div id="q31-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 32: फ्रांसीसी क्रांति के दौरान "डायरेक्टरी" किस प्रकार का शासन था?</p>
+            <div class="options">
+                <label><input type="radio" name="q32" value="a"> लोकतंत्र</label>
+                <label><input type="radio" name="q32" value="b"> तानाशाही</label>
+                <label><input type="radio" name="q32" value="c"> सामंती</label>
+                <label><input type="radio" name="q32" value="d"> गणतांत्रिक</label>
+            </div>
+            <button onclick="checkAnswer('q32', 'a')">उत्तर जांचें</button>
+            <div id="q32-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 33: फ्रांसीसी क्रांति के समय "बोडिन" ने किस सिद्धांत को प्रस्तुत किया?</p>
+            <div class="options">
+                <label><input type="radio" name="q33" value="a"> सामाजिक अनुबंध</label>
+                <label><input type="radio" name="q33" value="b"> शक्ति के विभाजन</label>
+                <label><input type="radio" name="q33" value="c"> जनसत्ता</label>
+                <label><input type="radio" name="q33" value="d"> लोकतंत्र</label>
+            </div>
+            <button onclick="checkAnswer('q33', 'b')">उत्तर जांचें</button>
+            <div id="q33-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 34: फ्रांसीसी क्रांति के दौरान "सर्वोच्च प्राणी" की पूजा को किसने प्रोत्साहित किया?</p>
+            <div class="options">
+                <label><input type="radio" name="q34" value="a"> नेपोलियन</label>
+                <label><input type="radio" name="q34" value="b"> रोबेस्पियर</label>
+                <label><input type="radio" name="q34" value="c"> मिराबो</label>
+                <label><input type="radio" name="q34" value="d"> दांटन</label>
+            </div>
+            <button onclick="checkAnswer('q34', 'b')">उत्तर जांचें</button>
+            <div id="q34-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 35: फ्रांसीसी क्रांति के दौरान "जैकबिन क्लब" की स्थापना कब की गई?</p>
+            <div class="options">
+                <label><input type="radio" name="q35" value="a"> 1789</label>
+                <label><input type="radio" name="q35" value="b"> 1791</label>
+                <label><input type="radio" name="q35" value="c"> 1792</label>
+                <label><input type="radio" name="q35" value="d"> 1793</label>
+            </div>
+            <button onclick="checkAnswer('q35', 'a')">उत्तर जांचें</button>
+            <div id="q35-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 36: फ्रांसीसी क्रांति के दौरान "मार्टिन लुथर" का क्या योगदान था?</p>
+            <div class="options">
+                <label><input type="radio" name="q36" value="a"> धार्मिक सुधार</label>
+                <label><input type="radio" name="q36" value="b"> राजनीतिक सुधार</label>
+                <label><input type="radio" name="q36" value="c"> आर्थिक सुधार</label>
+                <label><input type="radio" name="q36" value="d"> सामाजिक सुधार</label>
+            </div>
+            <button onclick="checkAnswer('q36', 'a')">उत्तर जांचें</button>
+            <div id="q36-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 37: फ्रांसीसी क्रांति के दौरान "गिरोनडिन" किसे कहा जाता था?</p>
+            <div class="options">
+                <label><input type="radio" name="q37" value="a"> एक क्रांतिकारी समूह</label>
+                <label><input type="radio" name="q37" value="b"> एक सैनिक समूह</label>
+                <label><input type="radio" name="q37" value="c"> एक आर्थिक वर्ग</label>
+                <label><input type="radio" name="q37" value="d"> एक धार्मिक समुदाय</label>
+            </div>
+            <button onclick="checkAnswer('q37', 'a')">उत्तर जांचें</button>
+            <div id="q37-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 38: फ्रांसीसी क्रांति के समय "लेनिन" का क्या योगदान था?</p>
+            <div class="options">
+                <label><input type="radio" name="q38" value="a"> श्रमिक सुधार</label>
+                <label><input type="radio" name="q38" value="b"> सामाजिक सुधार</label>
+                <label><input type="radio" name="q38" value="c"> राजनीतिक नेतृत्व</label>
+                <label><input type="radio" name="q38" value="d"> धार्मिक सुधार</label>
+            </div>
+            <button onclick="checkAnswer('q38', 'c')">उत्तर जांचें</button>
+            <div id="q38-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 39: फ्रांसीसी क्रांति के दौरान "लुइस XVI" को किस प्रकार की सजा दी गई?</p>
+            <div class="options">
+                <label><input type="radio" name="q39" value="a"> फांसी</label>
+                <label><input type="radio" name="q39" value="b"> गोलीबारी</label>
+                <label><input type="radio" name="q39" value="c"> परलोक गमन</label>
+                <label><input type="radio" name="q39" value="d"> निष्कासन</label>
+            </div>
+            <button onclick="checkAnswer('q39', 'a')">उत्तर जांचें</button>
+            <div id="q39-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 40: फ्रांसीसी क्रांति के समय "नेपोलियन" का कौन सा शासन था?</p>
+            <div class="options">
+                <label><input type="radio" name="q40" value="a"> गणतांत्रिक</label>
+                <label><input type="radio" name="q40" value="b"> सामंती</label>
+                <label><input type="radio" name="q40" value="c"> तानाशाही</label>
+                <label><input type="radio" name="q40" value="d"> लोकतंत्र</label>
+            </div>
+            <button onclick="checkAnswer('q40', 'c')">उत्तर जांचें</button>
+            <div id="q40-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 41: फ्रांसीसी क्रांति के दौरान "फ्रांसीसी संविधान" किस वर्ष स्वीकृत हुआ?</p>
+            <div class="options">
+                <label><input type="radio" name="q41" value="a"> 1789</label>
+                <label><input type="radio" name="q41" value="b"> 1791</label>
+                <label><input type="radio" name="q41" value="c"> 1793</label>
+                <label><input type="radio" name="q41" value="d"> 1795</label>
+            </div>
+            <button onclick="checkAnswer('q41', 'b')">उत्तर जांचें</button>
+            <div id="q41-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 42: फ्रांसीसी क्रांति के दौरान "लुइस XVI" के समकालीन कौन थे?</p>
+            <div class="options">
+                <label><input type="radio" name="q42" value="a"> जॉर्ज III</label>
+                <label><input type="radio" name="q42" value="b"> विलियम IV</label>
+                <label><input type="radio" name="q42" value="c"> फ्रेडरिक II</label>
+                <label><input type="radio" name="q42" value="d"> पॉल I</label>
+            </div>
+            <button onclick="checkAnswer('q42', 'a')">उत्तर जांचें</button>
+            <div id="q42-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 43: फ्रांसीसी क्रांति के दौरान "पेरिस काउंसिल" का क्या कार्य था?</p>
+            <div class="options">
+                <label><input type="radio" name="q43" value="a"> नागरिक प्रशासन</label>
+                <label><input type="radio" name="q43" value="b"> सैन्य संचालन</label>
+                <label><input type="radio" name="q43" value="c"> न्यायपालिका</label>
+                <label><input type="radio" name="q43" value="d"> धार्मिक गतिविधियां</label>
+            </div>
+            <button onclick="checkAnswer('q43', 'a')">उत्तर जांचें</button>
+            <div id="q43-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 44: फ्रांसीसी क्रांति के समय "पार्लियामेंट" का क्या मतलब था?</p>
+            <div class="options">
+                <label><input type="radio" name="q44" value="a"> उच्च न्यायालय</label>
+                <label><input type="radio" name="q44" value="b"> विधायिका</label>
+                <label><input type="radio" name="q44" value="c"> कार्यपालिका</label>
+                <label><input type="radio" name="q44" value="d"> सैन्य समिति</label>
+            </div>
+            <button onclick="checkAnswer('q44', 'b')">उत्तर जांचें</button>
+            <div id="q44-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 45: फ्रांसीसी क्रांति के दौरान "नेपोलियन" के कौन से नीतिगत सिद्धांत थे?</p>
+            <div class="options">
+                <label><input type="radio" name="q45" value="a"> सामाजिक समानता और न्याय</label>
+                <label><input type="radio" name="q45" value="b"> सामंती अधिकार और विशेषाधिकार</label>
+                <label><input type="radio" name="q45" value="c"> धार्मिक अनुशासन</label>
+                <label><input type="radio" name="q45" value="d"> आर्थिक बंधन</label>
+            </div>
+            <button onclick="checkAnswer('q45', 'a')">उत्तर जांचें</button>
+            <div id="q45-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 46: फ्रांसीसी क्रांति के दौरान "लुइस XVI" के प्रमुख विरोधी कौन थे?</p>
+            <div class="options">
+                <label><input type="radio" name="q46" value="a"> जेकबिन</label>
+                <label><input type="radio" name="q46" value="b"> गिरोनडिन</label>
+                <label><input type="radio" name="q46" value="c"> रोबेस्पियर</label>
+                <label><input type="radio" name="q46" value="d"> सभी</label>
+            </div>
+            <button onclick="checkAnswer('q46', 'd')">उत्तर जांचें</button>
+            <div id="q46-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 47: फ्रांसीसी क्रांति के समय "सर्वोच्च प्राणी" की पूजा किसे प्रोत्साहित की गई?</p>
+            <div class="options">
+                <label><input type="radio" name="q47" value="a"> रोबेस्पियर</label>
+                <label><input type="radio" name="q47" value="b"> नेपोलियन</label>
+                <label><input type="radio" name="q47" value="c"> दांटन</label>
+                <label><input type="radio" name="q47" value="d"> मिराबो</label>
+            </div>
+            <button onclick="checkAnswer('q47', 'a')">उत्तर जांचें</button>
+            <div id="q47-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 48: फ्रांसीसी क्रांति के दौरान "कॉन्वेंट" का क्या मतलब था?</p>
+            <div class="options">
+                <label><input type="radio" name="q48" value="a"> धर्मसभा</label>
+                <label><input type="radio" name="q48" value="b"> विधायिका</label>
+                <label><input type="radio" name="q48" value="c"> न्यायपालिका</label>
+                <label><input type="radio" name="q48" value="d"> कार्यपालिका</label>
+            </div>
+            <button onclick="checkAnswer('q48', 'b')">उत्तर जांचें</button>
+            <div id="q48-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 49: फ्रांसीसी क्रांति के दौरान "नेपोलियन" के शासन का प्रमुख उद्देश्य क्या था?</p>
+            <div class="options">
+                <label><input type="radio" name="q49" value="a"> साम्राज्य की स्थापना</label>
+                <label><input type="radio" name="q49" value="b"> गणतांत्रिक शासन</label>
+                <label><input type="radio" name="q49" value="c"> स्वतंत्रता की रक्षा</label>
+                <label><input type="radio" name="q49" value="d"> सामाजिक सुधार</label>
+            </div>
+            <button onclick="checkAnswer('q49', 'a')">उत्तर जांचें</button>
+            <div id="q49-result" class="result"></div>
+        </div>
+
+        <div class="question">
+            <p>प्रश्न 50: फ्रांसीसी क्रांति के दौरान "नपोलियन कोड" का क्या उद्देश्य था?</p>
+            <div class="options">
+                <label><input type="radio" name="q50" value="a"> कानूनों का संहिताबद्धकरण</label>
+                <label><input type="radio" name="q50" value="b"> सैनिकों की भर्ती</label>
+                <label><input type="radio" name="q50" value="c"> विदेशी व्यापार को प्रोत्साहन</label>
+                <label><input type="radio" name="q50" value="d"> धार्मिक अनुशासन</label>
+            </div>
+            <button onclick="checkAnswer('q50', 'a')">उत्तर जांचें</button>
+            <div id="q50-result" class="result"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,58 +1,14 @@
 <!DOCTYPE html>
 <html lang="hi">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>इकाई 1 - भौगोलिक खोज क्विज</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1, h2 {
-            text-align: center;
-        }
-        .question {
-            margin-bottom: 15px;
-        }
-        .question p {
-            margin: 0;
-            font-weight: bold;
-        }
-        .options {
-            margin-top: 5px;
-        }
-        .options label {
-            display: block;
-            margin-bottom: 5px;
-        }
-        .result {
-            margin-top: 10px;
-            font-weight: bold;
-        }
-        button {
-            padding: 10px 20px;
-            border: none;
-            border-radius: 4px;
-            background-color: #007BFF;
-            color: #fff;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #0056b3;
-        }
-    </style>
+    <link rel="stylesheet" href="../style.css">
+    <script src="../script.js"></script>
 </head>
+
 <body>
     <div class="container">
         <h1>इकाई 1 - भौगोलिक खोज</h1>
@@ -176,7 +132,7 @@
             <button onclick="checkAnswer('q10', 'a')">उत्तर जांचें</button>
             <div id="q10-result" class="result"></div>
         </div>
-        
+
         <div class="question">
             <p>प्रश्न 11: कोलंबस ने पहली बार अमेरिका की खोज किस वर्ष की थी?</p>
             <div class="options">
@@ -659,26 +615,7 @@
 
     </div>
 
-    <script>
-        function checkAnswer(question, correctAnswer) {
-            const selectedOption = document.querySelector(`input[name="${question}"]:checked`);
-            const resultDiv = document.getElementById(`${question}-result`);
-            if (selectedOption) {
-                const answer = selectedOption.value;
-                if (answer === correctAnswer) {
-                    resultDiv.textContent = 'सही उत्तर!';
-                    resultDiv.style.color = 'green';
-                } else {
-                    resultDiv.textContent = 'गलत उत्तर। सही उत्तर है: ' + correctAnswer.toUpperCase();
-                    resultDiv.style.color = 'red';
-                }
-            } else {
-                resultDiv.textContent = 'कृपया एक विकल्प चुनें।';
-                resultDiv.style.color = 'orange';
-            }
-        }
-    </script>
 
 </body>
-</html>
 
+</html>
